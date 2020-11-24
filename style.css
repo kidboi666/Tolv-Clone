@@ -1,0 +1,224 @@
+body {
+  font-family: 'NantesWeb', 'Lora', serif;
+}
+header {
+  width: 100%;
+  height: 47px;
+  background: #fff;
+  position:fixed;
+  z-index: 200;
+  box-shadow: 0 1px 15px 1px rgb(0, 0, 0, 0.2);
+}
+
+.header__wrapper {
+  width: 1211px;
+  height: 47px;
+  margin: 0 auto;
+  position: relative;
+}
+.menu__section {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+.header__wrapper .logo {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+.header__wrapper .logo span {
+  transform: rotate(-15deg);
+}
+.search__section {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+
+/* 메인 섹션 */
+
+
+main {
+  width: 100% 
+}
+.main__wrapper {
+  width: 100%;
+}
+.main__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main__section .gallery__grid img {
+  width: 100%;
+  display: block;
+}
+.main__section .text__grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__section .text__grid .text__box {
+  font-size: 36px;
+  padding: 0 100px;
+  text-align: center;
+}
+.main__section .text__grid .text__box span {
+  font-size: 12px;
+}
+.main__section .text__grid .text__box a {
+  color: orangered;
+}
+
+/* 옐로우 존 */
+
+
+.yellow__section {
+  position:relative;
+  width: 100%;
+  background: #EFCB56;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.yellow__text__box {
+  padding: 0 280px;
+  text-align: center;
+}
+.yellow__text__box span {
+  font-size: 50px;
+}
+.yellow__text__box p {
+  margin-top: 30px;
+  font-size: 28px;
+  line-height: 34px;
+}
+.yellow__section .ad {
+  font-size: 12px;
+}
+.yellow__section a {
+  color: orangered;
+}
+
+
+/* 그리드 갤러리판  */
+
+
+.products__section {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 2px;
+  row-gap: 2px;
+  z-index: 50;
+}
+.product__gallery:nth-child(1),
+.product__gallery:nth-child(5) {
+  grid-column: span 2;
+}
+.product__gallery {
+  position: relative;
+  z-index: 0;
+}
+.product__gallery img {
+  position: relative;
+  width: 100%;
+  display: block;
+  transition: .3s;
+  z-index: -1;
+}
+.product__gallery:hover img {
+  filter: blur(50px);
+}
+.product__gallery:hover .product__text {
+  opacity: 1;
+}
+.product__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .3s;
+}
+.product__text p:first-child {
+  font-weight: bold;
+}
+
+
+/* 푸터 존  */
+
+
+footer {
+  position: relative;
+  background: #535851;
+  width: 100%;
+  height: 90vh;
+  z-index: 100;
+}
+.footer__wrapper {
+  padding: 100px 190px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer__wrapper div {
+  display: flex;
+  flex-direction: column;
+}
+.footer__wrapper p {
+  color: #9ba597;
+  margin-bottom: 14px;
+}
+.footer__wrapper div a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 14px;
+  transition: .3s;
+}
+.footer__wrapper div a:hover {
+  text-decoration: underline;
+}
+.reserved {
+  position: relative;
+  padding: 0 190px;
+}
+.reserved .right {
+  color: #fff;
+  font-size: 12px;
+}
+.reserved .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.logo .O {
+  position: relative;
+  font-size: 80px;
+  transform: rotate(-15deg);
+}
+.logo .T {
+  position: absolute;
+  top: 25px;
+  left: 22px;
+  font-size: 35px;
+}
+.logo .dot {
+  position: absolute;
+  font-size: 30px;
+  top: 14px;
+  left: 35px;
+}
